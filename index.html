@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .section-input {
+            display: flex;
+            flex-direction: row;
+            border-bottom: 2px outset;
+            margin-bottom: 20px;
+        }
+
+        .form .input {
+            margin-top: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            height:20px;
+            margin-top: 15px;
+        }
+
+        .inv {
+            color:red;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Get A FizzBuzz Result!</h1>
+    <div class="section-input" id="wrapper">
+        <p>Type a number: </p>
+        <form name = "input-wrapper" class="form">
+            <input type="text" name = "input" id="number" class="input">
+        </form>
+        <button class="button" onclick="fizbuz()">Click here!</button>
+    </div>
+    <div id="hasil">
+        <p class="inv" id="invalid"></p>
+    </div>
+    
+    <script src="fizzbuzz.js"></script>
+</body>
+</html>
